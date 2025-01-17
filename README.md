@@ -12,7 +12,7 @@
 - 6.見た目を改善
 
 ## ③DEMO
-- https://takkun-da.sakura.ne.jp/database/index.php
+- https://takkun-da.sakura.ne.jp/node-bee-test/login.php
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 - ID: 今回なし
