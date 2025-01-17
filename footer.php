@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p>&copy; 2025 データベース風サイト - すべての権利を保有</p>
+    <p>&copy; 2025 コミュニケーション場 - すべての権利を保有</p>
 </footer>
 
 <style>

@@ -1,13 +1,18 @@
 <?php
-session_start(); // セッション開始
+// セッション開始
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // ユーザー情報取得
 $userName = $_SESSION['user_name'] ?? null;
 ?>
 <header class="navbar">
-    <a href="index.php" class="logo">データベース風サイト</a>
+    <a href="index.php" class="logo">コミュニケーション場</a>
     <div class="nav-right">
         <?php if ($userName): ?>
+            <a href="group_list.php" class="nav-link">グループ一覧</a>
+            <a href="requests.php" class="nav-link">申請一覧</a>
             <a href="detail.php?name=<?php echo urlencode($userName); ?>" class="username-link">
                 ようこそ、<?php echo htmlspecialchars($userName); ?> さん
             </a>
@@ -50,6 +55,12 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
+}
+
+.username-link {
+    margin-left: 10px;
+    font-weight: normal;
     color: white;
 }
 </style>
